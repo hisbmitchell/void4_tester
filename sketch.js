@@ -1,15 +1,21 @@
 function setup() {
-   createCanvas(windowWidth, windowHeight);
-   background('#bc0319');
+  
+   
+  canvas = createCanvas(640, 480);
+  background('#e50000');
+  canvas.id('p5canvas');
+  
+  var seriously = new Seriously();
+   
+   var src = seriously.source('#image0');
+   var target = seriously.target('#p5canvas');
+   
+   seriously.go();
    
 }
 
 function draw() {
-  background('#bc0319');
+  
   
 }
 
- function windowResized(){
-        resizeCanvas(windowWidth, windowHeight);
-        //bgVideo.size(windowHeight*2, 300);
-      }
